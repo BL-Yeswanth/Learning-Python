@@ -1,0 +1,15 @@
+2026-01-19 10:28:30,012 - INFO - divide called with 10 and 2
+2026-01-19 10:28:30,012 - INFO - divide called with 10 and 0
+2026-01-19 10:28:30,012 - ERROR - Division by zero
+2026-01-19 10:59:21,396 - INFO - divide called with 10 and 2
+2026-01-19 10:59:21,396 - INFO - divide called with 10 and 0
+2026-01-19 10:59:21,396 - ERROR - Division by zero
+2026-01-19 10:59:51,537 - INFO - divide called with 10 and 2
+2026-01-19 10:59:51,537 - INFO - divide called with 10 and 0
+2026-01-19 10:59:51,538 - ERROR - Division by zero
+2026-01-19 11:00:05,093 - INFO - divide called with 10 and 2
+2026-01-19 11:00:05,094 - INFO - divide called with 10 and 0
+2026-01-19 11:00:05,094 - ERROR - Division by zero
+2026-01-21 12:36:42,257 - INFO - divide called with 10 and 2
+2026-01-21 12:36:42,258 - INFO - divide called with 10 and 0
+2026-01-21 12:36:42,258 - ERROR - Division by zero
