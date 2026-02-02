@@ -16,3 +16,8 @@ select count(sal), sal
 from emp
 group by sal;
 
+select deptno
+from emp
+where ename like '%A%' or ename '%s%'
+group by deptno 
+having count(*)>=3;
