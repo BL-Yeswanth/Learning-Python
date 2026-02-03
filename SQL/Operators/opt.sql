@@ -205,7 +205,123 @@ select ename
 from emp
 where ename not like 'A%';
 
+-- all
 
+select ename,sal
+from emp 
+where sal > all (select sal
+from emp
+where job='salesman');
+
+select ename, sal
+from emp
+where sal > all (select sal
+from emp
+where job='manager');
+
+select ename,sal
+from emp
+where sal < all(select sal
+from emp
+where job='manager');
+
+-- any
+
+select ename,sal
+from emp
+where sal> any(select sal
+from emp
+where job='salesman');
+
+select ename,sal
+from emp
+where sal<any(select sal
+from emp
+where job ='salesman');
+
+select ename
+from emp
+where mgr =(select empno
+from emp
+where ename='king');
+
+-- exist operator
+
+select dname
+from dept
+where exits (select deptno
+from emp
+where emp.deptno=dept.deptno);
+
+-- not exist
+select dname
+from dept
+where not exists (select deptno
+from emp
+where emp.deptno=dept.deptno);
+
+-- Single row functions
+
+-- length()
+select length(ename)
+from emp
+where ename='smith';
+
+-- concat()
+select concat(ename,sal)
+from emp;
+
+-- upper()
+select upper('smith')
+from dual;
+
+-- Lower()
+select lower(ename)
+from emp;
+
+-- INITCAP()
+select initcap(ename)
+from emp;
+
+-- reverse()
+select reverse(ename)
+from emp;
+
+-- substr()
+select substr('program',5)
+from dual;
+
+-- instr()
+select instr('apple','a',1)
+from dual;
+
+-- replace()
+select replace('tot','t','b')
+from dual;
+
+-- mod()
+select mod(5,2)
+from dual;
+
+-- round()
+select round(7.5)
+from dual;
+
+-- trunc()
+select turnc(7.9)
+from dual;
+
+-- ltrim()
+select ltrim('  smith  ')
+from emp;
+
+-- rtrim()
+select rtrim('smith  ')
+from emp;
+
+-- ceil
+select ceil(3456.45678)
+from dual;
 
 
 
